@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>snow.jr — Work</title>
+    <meta name="description" content="Selected work by snow.jr, graphic designer." />
+    <link rel="preload" href="/fonts/SnowflakeSans-Light.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/SnowflakeSans-Book.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="icon" href="/icons/mark.svg" type="image/svg+xml" />
+    <script type="module" crossorigin src="/assets/index-ByyUJ6-7.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CqPHKI8h.css">
+  </head>
+
+  <body class="white-body">
+    <!-- Menu button -->
+    <div class="menu-btn-container" id="menu-btn-root">
+      <div class="menu-btn open">
+        <div class="toggle menu-black" aria-label="Open menu" role="button" tabindex="0">
+          <span>[</span><span>+</span><span>Menu</span><span>]</span>
+        </div>
+        <div class="toggle menu-reveal menu-reveal-blue" aria-hidden="true">
+          <span>[</span><span>+</span><span>Menu</span><span>]</span>
+        </div>
+        <div class="toggle menu-reveal menu-reveal-white" aria-hidden="true">
+          <span>[</span><span>+</span><span>Menu</span><span>]</span>
+        </div>
+      </div>
+      <div class="menu-btn close hidden">
+        <div class="toggle" aria-label="Close menu" role="button" tabindex="0">
+          <span>[</span><span>-</span><span>Close</span><span>]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fullscreen menu -->
+    <div class="menu-container">
+      <canvas class="menu-bg" aria-hidden="true"></canvas>
+
+      <div class="menu-img-container">
+        <div class="hover-bulge" data-src="/img/menu/m1.webp"></div>
+      </div>
+      <div class="menu-img-container">
+        <div class="hover-bulge" data-src="/img/menu/m2.webp"></div>
+      </div>
+      <div class="menu-img-container">
+        <div class="hover-bulge" data-src="/img/menu/m3.webp"></div>
+      </div>
+
+      <nav class="menu-links">
+        <a href="#top" data-nav="gallery">Portfolio</a>
+        <a href="#list" data-nav="list">Projects</a>
+        <a href="mailto:hello@snowjr.studio">Contact</a>
+      </nav>
+
+      <div class="privacy-container">
+        <span class="privacy-btn"><span class="btn-span-1">[</span>© 2026 snow.jr<span class="btn-span-2">]</span></span>
+      </div>
+    </div>
+
+    <!-- Logo -->
+    <div class="logo-container" id="logo-root">
+      <a href="#top" class="logo-wrapper" aria-label="snow.jr">
+        <span class="logo logo-word">snow.jr</span>
+      </a>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact-container" id="contact-btn-root">
+      <a href="mailto:hello@snowjr.studio" class="contact-link link-black">Contact</a>
+      <a href="mailto:hello@snowjr.studio" class="contact-link link-reveal link-reveal-blue" aria-hidden="true" tabindex="-1">Contact</a>
+      <a href="mailto:hello@snowjr.studio" class="contact-link link-reveal link-reveal-white" aria-hidden="true" tabindex="-1">Contact</a>
+    </div>
+
+    <!-- Gallery / list -->
+    <main id="top">
+      <div class="view-toggle">
+        <button type="button" class="toggle-btn is-active" data-view="gallery">[ Gallery view ]</button>
+        <button type="button" class="toggle-btn" data-view="list">List view</button>
+      </div>
+
+      <div class="img-container"></div>
+      <div class="list-container" hidden></div>
+    </main>
+
+    <!-- Project overlay -->
+    <div class="project-overlay" aria-hidden="true">
+      <div class="project-panel" role="dialog" aria-modal="true" aria-label="Project">
+        <button type="button" class="project-close" aria-label="Close">[ close ]</button>
+        <div class="project-figure"><img alt="" /></div>
+        <div class="project-meta">
+          <span class="project-title"></span>
+          <span class="project-year"></span>
+          <span class="project-tags"></span>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
